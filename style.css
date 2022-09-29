@@ -3,7 +3,7 @@
 body{
     background: linear-gradient(240.93deg, #292929 -0.37%, #1B1B1B 101.45%);
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     /* display: flex; */
     font-family: 'Roboto';
     font-style: normal;
@@ -16,7 +16,6 @@ body{
     transform: translateX(-50%) translateY(-50%);
     width: calc(892px * 0.9);
     height: calc(902px * 0.9);
-
     background: linear-gradient(64.5deg, #292929 2.1%, #1C1C1C 100.55%);
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
     border-radius: 60px;
@@ -50,7 +49,7 @@ body{
 
 @keyframes apparition_canette {
     from{
-        left: 100%;
+        left: 90%;
         opacity: 0;
     }
     to{
@@ -91,6 +90,7 @@ body{
 }
 
 #btn_next{
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 55%;
@@ -118,7 +118,7 @@ body{
 }
 
 .disparition_texte{
-    animation: disparition_texte 0.5s ease forwards ;
+    animation: disparition_texte 0.2s ease forwards ;
 }
 
 @keyframes apparition_texte {
@@ -139,7 +139,7 @@ body{
     }
     to{
         opacity: 0%;
-        transform: translateY(90%);
+        transform: translateY(50%);
     }
 }
 
