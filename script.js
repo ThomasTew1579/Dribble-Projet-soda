@@ -12,7 +12,7 @@ let Zero_Sugar = {
     image                 : "/images/1.png",
     titre                 : "Zero Sugar",
     decrpition_texte      : "Coca-Cola Zero Sugar Real Coke taste with zero calories. It's possible!",
-    anim                  : "apparition_canette"
+    texte_color           : "#FFFFFF"
 }
 
 let Vanilla = {
@@ -20,7 +20,7 @@ let Vanilla = {
     image                 : "/images/2.png",
     titre                 : "Vanilla",
     decrpition_texte      : "Great taste of Coca-Cola with refreshingly smooth balance of vanilla flavor.",
-    anim                  : "apparition_canette",
+    texte_color           : "#000"
 };
 
 let Cherry = {
@@ -28,7 +28,7 @@ let Cherry = {
     image                 : "/images/3.png",
     titre                 : "Cherry",
     decrpition_texte      : "Great taste of Coca-Cola with a sweet, smooth cherry flavor.",
-    anim                  : "apparition_canette",
+    texte_color           : "#FFFFFF"
 };
 
 let Orange_Vanilla = {
@@ -36,7 +36,7 @@ let Orange_Vanilla = {
     image                 : "/images/4.png",
     titre                 : "Orange Vanilla",
     decrpition_texte      : "Newest flavor to join the Coke family with a new twist on delicious.",
-    anim                  : "apparition_canette",
+    texte_color           : "#FFFFFF"
 };
 
 
@@ -66,6 +66,7 @@ function next (){
 }
 
 function changerTexte (canette_actuel){
+    texte.style.color = canette_actuel.texte_color;
     titre.textContent = canette_actuel.titre;
     decrpition.textContent = canette_actuel.decrpition_texte;
 }
