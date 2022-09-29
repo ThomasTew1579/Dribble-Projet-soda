@@ -1,5 +1,4 @@
 
-
 let card                = document.querySelector(".card");
 let canette             = document.querySelector("#canette");
 let texte               = document.querySelector("#texte");
@@ -51,18 +50,13 @@ function next (){
     } else {
         index++
     }
-
     disparition()
 
-    
     setTimeout( () => {
         changerTexte(listeCanette[index]);
         changerImage(listeCanette[index])
         apparition(listeCanette[index])
     } , 400 );
-
-
-    console.log(card.style.background);
 }
 
 function changerTexte (canette_actuel){
